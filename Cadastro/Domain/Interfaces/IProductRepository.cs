@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Cadastro.Domain.Interfaces
 {
-    interface IProductRepository
+    public interface IProductRepository
     {
         Product Get(int id);
         IEnumerable<Product> GetAll();
