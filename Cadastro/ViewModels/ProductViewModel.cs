@@ -11,7 +11,8 @@ namespace Cadastro.ViewModels
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
+		public Client Client { get; set; }
+		public string Name { get; set; }
 		public decimal Value { get; set; }
 		public bool Active { get; set; }
 		public int IdCategory { get; set; }

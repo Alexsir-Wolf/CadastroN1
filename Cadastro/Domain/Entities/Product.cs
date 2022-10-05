@@ -7,5 +7,6 @@
         public bool Active { get; set; }
         public int IdCategory { get; set; }
         public virtual Category Category { get; set; }
+        public Client Client { get; set; }
     }
 }

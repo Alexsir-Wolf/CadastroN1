@@ -15,27 +15,27 @@ namespace Cadastro.Controllers
 			_productViewModelService = productViewModelService;
 		}
 
-		// GET: Clients
+		// GET: Products
 		public ActionResult Index()
 		{
 			var list = _productViewModelService.GetAll();
 			return View(list);
 		}
 
-		// GET: Clients/Details/5
+		// GET: Products/Details/5
 		public ActionResult Details(int id)
 		{
 			var viewModel = _productViewModelService.Get(id);
 			return View(viewModel);
 		}
 
-		// GET: Clients/Create
+		// GET: Products/Create
 		public ActionResult Create()
 		{
 			return View();
 		}
 
-		// POST: Clients/Create
+		// POST: Products/Create
 		[HttpPost]
 		[ValidateAntiForgeryToken]
 		public ActionResult Create(ProductViewModel viewModel)
@@ -56,14 +56,14 @@ namespace Cadastro.Controllers
 			}
 		}
 
-		// GET: Clients/Edit/5
+		// GET: Products/Edit/5
 		public ActionResult Edit(int id)
 		{
 			var viewModel = _productViewModelService.Get(id);
 			return View(viewModel);
 		}
 
-		// POST: Clients/Edit/5
+		// POST: Products/Edit/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
 		public ActionResult Edit(int id, ProductViewModel viewModel)
@@ -84,14 +84,14 @@ namespace Cadastro.Controllers
 			}
 		}
 
-		// GET: Clients/Delete/5
+		// GET: Products/Delete/5
 		public ActionResult Delete(int id)
 		{
 			var viewModel = _productViewModelService.Get(id);
 			return View(viewModel);
 		}
 
-		// POST: Clients/Delete/5
+		// POST: Products/Delete/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
 		public ActionResult Delete(int id, IFormCollection collection)
